@@ -1,0 +1,34 @@
+#thanks {
+    display: flex;
+    background: var(--yellow);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 693px;
+    color: var(--black);
+}
+
+.finaly {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--red);
+    height: 50%;
+    width: 50%;
+    color: var(--white);
+    border-radius: 10px;
+}
+
+.finaly a {
+    margin-top: 50px;
+    border-radius: 10px;
+    border: solid 2px var(--yellow);
+    padding: 5px;
+    font-weight: 600;
+}
+
+.finaly a:hover {
+    background: var(--yellow);
+}
+

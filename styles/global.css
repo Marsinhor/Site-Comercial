@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* VARIAVEIS */
+html {
+    --yellow: #e2c55f;
+    --red: #b22523;
+    --black: #000000;
+    --white: #ffffff;  
+}
+/* VARIAVEIS */
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: var(--white);
+    font-size: 24px;
+    color: var(--white);
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+/* CABEÇALHO */
+#container-top {
+    background: linear-gradient(to bottom, var(--yellow) 50px, var(--red) 50px);
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.logo-home {
+    display: flex;
+    padding: 2px;
+    width: 150px;
+    height: 100%;
+    justify-content: center;
+    margin-left: 6rem;
+}
+
+.logo-home img {
+    width: 130%;
+    height: 150%;
+}
+
+.menu {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    margin-top: 50px;
+    height: 59px; 
+    justify-content: center;
+}
+
+.menu ul {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.menu ul li{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {  
+    color: var(--white);
+}
+
+.buy {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    margin-top: 50px;
+    height: 59px; 
+    justify-content: right;
+}
+
+.buy ul {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    gap: 5px;
+    justify-content: center;
+}
+
+.buy ul li{
+    padding: 5px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    border-radius: 3%;
+}
+
+li:hover{
+    color: var(--yellow);
+    transition: 0.2s;
+    cursor: pointer;
+}
+/* CABEÇALHO */
+
+/* RODAPÉ */
+footer {
+    display: flex;
+    background: var(--red);
+    text-align: center;
+    height: 150px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 25px;
+}
+
+footer div {
+    width: 25%;
+    padding: 10px;}
+
+footer h1{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.contact {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+}
+
+.contact-info{
+    display: flex;
+    width: 50%;
+    padding: 5px;
+    gap: 5px;
+}
+  
+
+.institutional {
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.institutional img {
+    margin: auto;
+    width: 35px;
+}
+
+.social {
+    line-height: 20px;
+    font-size: 25px;
+}
+
+.social a {
+    color: var(--white);
+}
+
+.social a:hover {
+    color: var(--yellow);
+}
+
+
+
+/* RODAPÉ */

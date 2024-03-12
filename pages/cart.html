@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netta Sorvetes</title>
+    <link rel="shortcut icon" href="../assets/favicon/netta-icon.ico" type="image/x-icon">
+
+<!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<!--FONTS-->
+
+<!--STYLES-->
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/cart.css">
+<!--STYLES-->
+</head>
+<body>
+<!--CABEÇALHO-->
+<header id="container-top" name="container-top">
+    <div class="logo-home" name="logo-home">
+        <a href="../index.html" target="_self" rel="next"><img src="../assets/netta-logo.png" alt="logo da empresa"></a>
+    </div>
+    
+    <div class="menu" name="menu">
+        <ul>
+            <a href="../pages/products.html" target="_self" rel="next"><li>Produtos</li></a>
+            <a href="../pages/marketplace.html" target="_self" rel="next"><li>Nossas Lojas</li></a>
+            <a href="../pages/about-us.html" target="_self" rel="next"><li>Sobre Nós</li></a>
+            <a href="../pages/contact.html" target="_self" rel="next"><li>Contato</li></a>
+            <a href="../pages/b2b.html" target="_self" rel="next"><li>Venda Netta</li></a>
+        </ul>
+    </div>
+
+    <div class="buy" name="buy">
+        <ul>
+            <a href="../pages/cart.html" target="_self" rel="next"><li>Fazer Pedido</li></a>
+        </ul>
+    </div>
+</header>
+<!--CABEÇALHO-->
+<!--FORMULARIO DO PEDIDO-->
+<section>
+    <h1>FAÇA SEU PEDIDO</h1>
+    <form action="https://api.staticforms.xyz/submit" method="post">
+        <label for="">Nome</label>
+        <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+        <label for="">Email</label>
+        <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+        <label for="">Detalhe Seu Pedido</label>
+        <textarea name="message" cols="30" rows="10" placeholder="Digite seu pedido" required></textarea>
+        <button type="submit">Enviar Pedido</button>
+
+        <input type="hidden" name="accessKey" value="cf696fd9-12ba-4e46-829f-17ad9aa49b11">
+        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/pages/thank-u.html">
+    </form>
+</section>
+
+<!--FORMULARIO DO PEDIDO-->
+
+<!--RODAPÉ-->
+<footer>
+    <div class="contact">
+        <h1>Fale Conosco</h1>
+        <div class="contact-info"><ion-icon name="call"></ion-icon><span>(21)12345-6789</span></div>
+        <div class="contact-info"><ion-icon name="call"></ion-icon><span>(21)12345-6789</span></div>
+        <div class="contact-info"><ion-icon name="mail"></ion-icon><span>atendimento@netta.com.br</span></div>
+    </div>
+    <div class="institutional">
+        <img src="../assets/netta-logo.png" alt="Netta Logo">
+        <p>Netta Sorvetes LTDA</p>
+        <p>12.345.678/0009-10</p>
+        <p>Todos os direitos Reservados ®</p>
+    </div>
+    <div class="social">
+        <h1>Redes Sociais</h1>
+        <a href="#" target="_blank" rel="external"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#" target="_blank" rel="external"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#" target="_blank" rel="external"><ion-icon name="logo-whatsapp"></ion-icon></a>
+    </div>
+</footer>
+<!--RODAPÉ-->
+
+<!--SCRIPTS-->
+<script src="../script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+<!--SCRIPTS-->
+</body>
+</html>

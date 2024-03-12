@@ -1,0 +1,37 @@
+.search-map {
+    display: flex;
+    background: var(--yellow);
+    height: 693px;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;}
+
+#map {
+    display: flex;
+    align-items: center;
+    border: var(--red) 8px solid;
+    width: 1000px;
+    height: 518px;
+    border-radius: 1%;
+}
+    
+
+.location {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;}
+
+.location button {
+    background: var(--red);
+    color: var(--white);
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 3%;
+    border: none;
+    }
+
+.location button:hover {
+    color: var(--yellow);
+    transition: 0.2s;}   

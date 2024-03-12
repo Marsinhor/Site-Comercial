@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netta Sorvetes</title>
+    <link rel="shortcut icon" href="../assets/favicon/netta-icon.ico" type="image/x-icon">
+
+<!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<!--FONTS-->
+
+<!--STYLES-->
+    <link rel="stylesheet" href="../styles/marketplace.css">
+    <link rel="stylesheet" href="../styles/global.css">
+<!--STYLES-->
+</head>
+<body>
+<!--CABEÇALHO-->
+<header id="container-top" name="container-top">
+    <div class="logo-home" name="logo-home">
+        <a href="../index.html" target="_self" rel="next"><img src="../assets/netta-logo.png" alt="logo da empresa"></a>
+    </div>
+    
+    <div class="menu" name="menu">
+        <ul>
+            <a href="../pages/products.html" target="_self" rel="next"><li>Produtos</li></a>
+            <a href="../pages/marketplace.html" target="_self" rel="next"><li>Nossas Lojas</li></a>
+            <a href="../pages/about-us.html" target="_self" rel="next"><li>Sobre Nós</li></a>
+            <a href="../pages/contact.html" target="_self" rel="next"><li>Contato</li></a>
+            <a href="../pages/b2b.html" target="_self" rel="next"><li>Venda Netta</li></a>
+        </ul>
+    </div>
+    
+    <div class="buy" name="buy">
+        <ul>
+            <a href="../pages/cart.html" target="_self" rel="next"><li>Fazer Pedido</li></a>
+        </ul>
+    </div>
+</header>
+<!--CABEÇALHO-->
+
+<!--MAPA-->
+<div class="search-map">
+    <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d235198.68142636976!2d-43.44598205!3d-22.91413075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1700247652517!5m2!1spt-BR!2sbr" width="1000" height="500" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="location">
+        <button onclick="searchPredefinedLocation(0)">Jardim América</button>
+        <button onclick="searchPredefinedLocation(1)">Itaguaí</button>
+        <button onclick="searchPredefinedLocation(2)">Ilha do Governador</button>
+    </div>
+</div>
+<!--MAPA-->
+
+<!--RODAPÉ-->
+<footer>
+    <div class="contact">
+        <h1>Fale Conosco</h1>
+        <div class="contact-info"><ion-icon name="call"></ion-icon><span>(21)12345-6789</span></div>
+        <div class="contact-info"><ion-icon name="call"></ion-icon><span>(21)12345-6789</span></div>
+        <div class="contact-info"><ion-icon name="mail"></ion-icon><span>atendimento@netta.com.br</span></div>
+    </div>
+    <div class="institutional">
+        <img src="../assets/netta-logo.png" alt="Netta Logo">
+        <p>Netta Sorvetes LTDA</p>
+        <p>12.345.678/0009-10</p>
+        <p>Todos os direitos Reservados ®</p>
+    </div>
+    <div class="social">
+        <h1>Redes Sociais</h1>
+        <a href="#" target="_blank" rel="external"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#" target="_blank" rel="external"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#" target="_blank" rel="external"><ion-icon name="logo-whatsapp"></ion-icon></a>
+    </div>
+</footer>
+<!--RODAPÉ-->
+
+<!--SCRIPTS-->
+<script src="../script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+<!--CONFIGURAÇÃO MAPA-->
+<script>
+    predefinedLocations = [
+        "Jardim América, Rio de Janeiro",
+        "Itaguaí, Rio de Janeiro",
+        "Ilha do Governador, Rio de Janeiro",];
+
+// CONFIGURAÇÃO: JARDIM AMÉRICA        
+    function searchPredefinedLocation(marketplace) {
+        if (marketplace >= 0 && marketplace < predefinedLocations.length) {var selectedLocation = predefinedLocations[marketplace]; var embedCode = '<iframe width="1000" height="500" frameborder="0" style="border:0" ' + 'src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14711.159827105876!2d-43.33392353266583!3d-22.810245589522115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997b31ea13e29f%3A0x527865946d1d6633!2sJardim%20America%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1700245642076!5m2!1spt-BR!2sbr"' + encodeURIComponent(selectedLocation) + '" allowfullscreen></iframe>'; document.getElementById('map').innerHTML = embedCode;} 
+        
+        else {console.error("Índice fora dos limites da lista de locais.");}
+// CONFIGURAÇÃO: JARDIM AMÉRICA
+
+// CONFIGURAÇÃO: ITAGUAÍ
+        if (marketplace >= 1 && marketplace < predefinedLocations.length) {var selectedLocation = predefinedLocations[marketplace]; var embedCode = '<iframe width="1000" height="500" frameborder="0" style="border:0" ' + 'src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58823.831800840664!2d-43.84575233238724!3d-22.85836965607121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c077168631157%3A0xbf83d242ae07f5d2!2zSXRhZ3Vhw60sIFJK!5e0!3m2!1spt-BR!2sbr!4v1700248837381!5m2!1spt-BR!2sbr"' + encodeURIComponent(selectedLocation) + '" allowfullscreen></iframe>'; document.getElementById('map').innerHTML = embedCode;} 
+        
+        else {console.error("Índice fora dos limites da lista de locais.");}
+// CONFIGURAÇÃO: ITAGUAÍ
+
+// CONFIGURAÇÃO: ILHA DO GOVERNADOR
+        if (marketplace >= 2 && marketplace < predefinedLocations.length) {var selectedLocation = predefinedLocations[marketplace]; var embedCode = '<iframe width="1000" height="500" frameborder="0" style="border:0" ' + 'src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29423.495571977095!2d-43.231398215562415!3d-22.804800165839787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99782c610b5699%3A0xc958ae1d35006b7d!2sIlha%20do%20Governador!5e0!3m2!1spt-BR!2sbr!4v1700249220675!5m2!1spt-BR!2sbr"' + encodeURIComponent(selectedLocation) + '" allowfullscreen></iframe>'; document.getElementById('map').innerHTML = embedCode;} 
+        
+        else {console.error("Índice fora dos limites da lista de locais.");}
+}
+// CONFIGURAÇÃO: ILHA DO GOVERNADOR
+</script>
+<!--CONFIGURAÇÃO MAPA-->
+<!--SCRIPTS-->
+</body>
+</html>

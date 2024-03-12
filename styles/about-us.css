@@ -1,0 +1,34 @@
+#about-us{
+    position: relative;
+    height: 900px;
+    background: var(--yellow);
+    padding: 60px;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: justify;
+    gap: 50px;
+    background: var(--red);
+    border-radius: 0.5%;
+    padding: 20px 45px;
+}
+
+.history h1 {
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.history p {
+    line-height: 35px;
+}
+
+.paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
